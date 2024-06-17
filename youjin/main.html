@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+
+	p{
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	span{
+		width: 100px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<div class="nav-bar">
+	</div>
+	<script>
+		const MENU_LIST = ["신상품", "베스트", "알뜰쇼핑", "특가/혜택"]
+		const navBar = document.querySelector("div");
+		MENU_LIST.forEach(menu => navBar.innerHTML += `<p>${menu}</p>`)
+		;
+		document.body.append("parent");
+	</script>
+</body>
+</html>
