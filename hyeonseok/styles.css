@@ -18,15 +18,6 @@ body {
 	height: 30px;
 }
 
-.category-nav u {
-		list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-	text-decoration: underline;
-}
-
 .main-nav ul, /* .secondary-nav ul, *//*  .category-nav u */l {
 	list-style: none;
 	margin: 0;
@@ -109,6 +100,9 @@ list-style:none;
 }
 .category-nav ul li:hover {
 	text-decoration: underline;
+	color: #7d3c98;
+
+
 }
 
 .category a {
