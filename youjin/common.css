@@ -1,0 +1,9 @@
+@charset "EUC-KR";
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	color: #333333;
+}
