@@ -107,6 +107,9 @@ list-style:none;
 .category-nav ul li {
 	margin-left: 15px;
 }
+.category-nav ul li:hover {
+	text-decoration: underline;
+}
 
 .category a {
 	text-decoration: underline;
