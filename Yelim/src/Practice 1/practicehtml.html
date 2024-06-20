@@ -20,46 +20,31 @@
 	.top1{
 		display: flex;
 		color: gray;
-		align-items: center;
+		align-items: c0enter;
 		margin: 10px;
-		justify-content: space-between;
+		/* justify-content: space-between; */
 		text-decoration-line: none;
 	}
 	.top1 a:active{
-		color: gray;
+		color: #5f0080;
 		text-decoration-line: none;
 	}
-	.menu1{
-		width: 600px;
-		overflow: hidden;
-		margin: auto;
-	}
-	.menu1>li{
-		width: 20%;
-		float: left;
-		text-align: center;
-		line-height: none; 
-	}
-	.menu1 a{color: gray;}
-	.submenu1{height: 0; overflow: hidden;}
-	.submenu1>li{
-		line-height: 50px;
-	}
-	.menu1>li:hover{
-		transition-duration: 0.5s;
-	}
-	.menu1>li:hover.submenu1{
-		overflow: visible;
-		transition-duration: 1s;
-	}
-	
+
 	.top2{
 		display: flex;
 		font-size: 25px;
 	}
+	.top2 a:active{
+		color: #5f0080;
+		text-decoration-line: none;
+	}
 	.top3{
 		display: flex;
 		font-size: 15px;
+	}
+	.top3 a:active{
+		color: #5f0080;
+		text-decoration-line: none;
 	}
 	.top3-1{
 		float: left;
@@ -71,8 +56,8 @@
 		height: 30px;
 		width: 300px;
 		background-color: white;
-		border:1px solid purple;
-		border-radius: 10px;
+		border:1px solid #5f0080;
+		border-radius: 5px;
 	}
 	.search-txt{
 		border: none;
@@ -87,12 +72,36 @@
 	}
 	.search-btn{
 		float: right;
-		width: 40px;
-		height: 100%;
+		width: 50px;
+		height: 50px;
 		border: none;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		/* display: flex; */
+		/* justify-content: center; */
+		/* align-items: center; */
+		/* background: url("./search.png"); */
+	}
+	img{
+		background-color: transparent;
+		line-height: none;
+	}
+	.location{
+		background: url("./location.png") no-repeat;
+		width: 50px;
+		height: 50px;
+		list-style: none;
+	}
+	.location:hover{
+		content: url("./location_hover.png");
+	}
+	.like{
+		background: url("./like.png") no-repeat;
+		width: 50px;
+		height: 50px;
+	}
+	.cart{
+		background: url("./cart.png") no-repeat;
+		width: 50px;
+		height: 50px;
 	}
 </style>
 </head>
@@ -106,12 +115,12 @@
 				<a href="#">|</a>
 				<ul class="menu1">
 					<li><a href="#">고객센터</a>
-						<ul class="submenu1">
+						<!-- <ul class="submenu1">
 							<li><a href="#">공지사항</a></li>
 							<li><a href="#">자주하는 질문</a></li>
 							<li><a href="#">1:1 문의</a></li>
 							<li><a href="#">대량주문 문의</a></li>
-						</ul>
+						</ul> -->
 					</li>
 				</ul>
 			</div>
@@ -125,31 +134,29 @@
 				</div>
 				<form class="search-box" action="" method="get">
 					<input class="search-txt" type="text" name="" placeholder="검색어를 입력해주세요."/>
-					<button class="search=btn" type="button">
-						<img src="search.png">
-					</button>
+					<button class="search=btn" type="button"></button>
 				</form>
 				<div>
-					<button type="button"><img src="location.png"/></button>
-					<button type="button"><img src="like.png"/></button>
-					<button type="button"><img src="cart.png"/></button>
+					<button class="location"></button>
+					<button class="like"></button>
+					<button class="cart"></button>
 				</div>
 			</div>
 			<div class="top3">
 				<ul>
 					<li color="black"><a href="">카테고리</a>
-						<ul>
+						<!-- <ul>
 							<li><a href="">뷰티컬리페스타</a></li>
 							<li><a href="">채소</a></li>
 							<li><a href="">과일·견과·쌀</a></li>
-						</ul>
+						</ul> -->
 					</li>
 				</ul>
 				<div class="top3-1">
-					<div>신상품</div>
-					<div>베스트</div>
-					<div>알뜰쇼핑</div>
-					<div>특가/혜택</div>
+					<div><a href="#">신상품</a></div>
+					<div><a href="#">베스트</a></div>
+					<div><a href="#">알뜰쇼핑</a></div>
+					<div><a href="#">특가/혜택</a></div>
 				</div>
 				<div>
 					<button>샛별·하루 배송안내</button>
